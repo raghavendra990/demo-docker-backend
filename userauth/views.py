@@ -121,14 +121,10 @@ class UserDetailsAPIView(APIView):
     """
 
     permission_classes = [IsAuthenticated, IsTokenValid]
-    serializer_class = UserDetailsSerializer
-
-    def get_serializer(self, *args, **kwargs):
-        """Return view serializer class"""
-        return self.serializer_class
     
     def get(self, request):
-        serializers = self.get_serializer()
+     
+        serializers = UserDetailsSerializer
         user_id = request.user.user_id
         user_obj = UserModel.objects.get(id=user_id)
         data = serializers(user_obj)
