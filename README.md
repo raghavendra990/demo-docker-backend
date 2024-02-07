@@ -42,8 +42,10 @@ Docker version 24.0.2
 </pre>
 
 ## Installation
-
+## clone the backend project
+	git clone https://github.com/raghavendra990/demo-docker-backend.git
 	cd <project directory>
+ 	
  ### build docker image
 	docker-compose build
  ### Run Docker image
