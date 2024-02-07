@@ -52,6 +52,7 @@ Docker version 24.0.2
  	docker-compose up
 
 ## Backend structure: 
+![Architecture](/architecture.png)
 
 Backend is built using django rest framework and Postgres as backend DB. 
 
