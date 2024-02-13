@@ -56,7 +56,7 @@ Docker version 24.0.2
 
 Backend is built using django rest framework and Postgres as backend DB. 
 
-It majorly contain two apps details below:
+It majorly contain one app details below:
 	
 <b>userauth</b>: It is used for authentication for the user with apis like Login, Register, Logout. I have used JWT custom authentication, code present at demo-backend/userauth/authentication.py .
 
